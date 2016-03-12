@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "P5 Test"
+date:   2016-03-16 22:28:12 +0100
+categories: p5
+---
+<div id="p5canvas"></div>
+<script>
+function setup() {
+  var cnv = createCanvas(640, 480);
+  cnv.parent("p5canvas");
+}
+
+function draw() {
+  if (mouseIsPressed) {
+    fill(0);
+  } else {
+    fill(255);
+  }
+  ellipse(mouseX, mouseY, 80, 80);
+}
+</script>
